@@ -9,6 +9,7 @@ class Bill_App:
         bg_color="#074463"
         title=Label(self.root,text="Billing Software",bd=12,relief=GROOVE,bg=bg_color,fg="white",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
         #========All Variables===========
+        # Here we define all the variables either they are integere or strings
         #========Cosmetics================= 
         self.soap = IntVar()
         self.face_cream = IntVar()
