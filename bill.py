@@ -1,15 +1,20 @@
-from tkinter import*
-from tkinter import messagebox
-import math, random, os
+from tkinter import* # This line imports all the classes, functions, and constants from the tkinter module. The * symbol is a wildcard that represents all the items in the module.
+from tkinter import messagebox # The messagebox class provides various methods for displaying different types of message boxes, such as information, warning, error, and question boxes.
+import math, random, os # This line imports three additional modules: math, random, and os.
 class Bill_App:
-    def __init__(self, root):
-        self.root = root
-        self.root.geometry("1350x700+0+0")
-        self.root.title("Billing Software")
-        bg_color="#074463"
-        title=Label(self.root,text="Billing Software",bd=12,relief=GROOVE,bg=bg_color,fg="white",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
+    def __init__(self, root): # This code is within the Bill_App class, specifically within the __init__ method, which is the constructor method that is called
+        self.root = root # Inside the __init__ method, the passed root window is assigned to self.root, making it accessible within the class.
+        self.root.geometry("1350x700+0+0") # Sets the dimensions and position of the root window to 1350 pixels wide, 700 pixels high, and positioned at (0, 0) on the screen.
+        self.root.title("Billing Software") # Sets the title of the root window to "Billing Software".
+        bg_color="#074463" # Defines a variable with a hexadecimal color code.
+        title=Label(self.root,text="Billing Software",bd=12,relief=GROOVE,bg=bg_color,fg="white",font=("times new roman",30,"bold"),pady=2).pack(fill=X) 
+        # creates a Label widget with the specified properties and assigns it to the title variable. 
+        # The label contains the text "Billing Software" and has a border, relief, background color, foreground color, font settings, and padding. 
+        # The pack(fill=X) method is then called to pack the label within the root window, filling the width of the window.
+        
         #========All Variables===========
-        # Here we define all the variables either they are integere or strings
+        # All the variables are explicitly defined to store values of specific types, including integers and strings.
+        # Each variable is assigned a value, and its type is determined based on the assigned value.
         #========Cosmetics================= 
         self.soap = IntVar()
         self.face_cream = IntVar()
@@ -52,6 +57,8 @@ class Bill_App:
         self.bill_no.set(str(x))
         self.search_bill = StringVar()
 
+        # By following this general approach, you can build separate frames for different sections or functionalities of the software application.
+        # Each frame can be customized and placed within the root window using the grid() method.
 
         #========Customer Details==============
         F1 = LabelFrame(self.root, text="Customer Details", bd=10, relief=GROOVE, font=("times new roman", 15, "bold"), fg="gold", bg=bg_color)
@@ -177,6 +184,8 @@ class Bill_App:
         exit = Button(btn_f, command = self.Exit_app, text="Exit", bd = 2, bg="cadetblue", fg="white", pady=15, width=9, font="arial 14 bold").grid(row=0, column=3, padx=5, pady=5)
         self.welcome_bill()
 
+
+    # You can then use these functions to perform calculations based on your specific requirements.
     def total(self):
 
         self.c_s_p = self.soap.get() * 40
@@ -394,7 +403,9 @@ class Bill_App:
         if op > 0:
             self.root.destroy()
 
-root = Tk()
-obj = Bill_App(root)
-root.mainloop()
+root = Tk() # Creates an instance of the Tk class, representing the main window or the root window of the Tkinter application.
+obj = Bill_App(root) #creates an instance of the Bill_App class, passing the root window as an argument. This initializes the Bill_App object and associates it with the root window.
+root.mainloop() # Starts the event loop of the Tkinter application. The program execution remains in this loop until the main window is closed by the user.
+                # The event loop is responsible for handling user interactions and keeping the application responsive.
 
+# Authored by: Sheikh Irfanullah Khan
