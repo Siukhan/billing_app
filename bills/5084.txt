@@ -1,0 +1,31 @@
+	Welcome DIK Enterprises
+ Bill Number: 5084
+ Customer Name: Sheikh Irfanullah
+ Phone Number: 0123456789
+======================================
+Products		QTY		Price
+======================================
+ Bath Soap		1		40
+ Face Cream		1		120
+ Face Wash		1		60
+ Hair Spray		1		180
+ Hair Gel		1		140
+ Body Lotion		1		180
+ Rice		1		380
+ Sugar		1		100
+ Flour		1		200
+ Salt		1		60
+ Tea		1		500
+ Oil		1		550
+ Badam		1		90
+ Stings		1		100
+ Cocacola		1		60
+ Sprite		1		60
+ Fanta		1		60
+ Pepsi		1		60
+--------------------------------------
+ Cosmetic Tax		Rs. 36.0
+ Grocery Tax		Rs. 179.0
+ Cold Drink Tax		Rs. 21.5
+ Total Bill		Rs. 3176.5
+--------------------------------------
